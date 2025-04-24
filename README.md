@@ -31,6 +31,10 @@ What’s Included
 
 - README.md: This file, which explains the project, the folder structure, and how to use the application.
 
+Dataset
+
+- The model is trained on a dataset of emails containing various types of PII. The dataset includes emails categorized into different types (e.g., "Incident", "Problem", etc.). The emails contain sensitive information like names, email addresses, phone numbers, Aadhaar numbers, credit card details, etc., which are masked during the processing.
+
 How to Use :
 
 Clone the Repository :
