@@ -32,17 +32,18 @@ test_api.py: A script used for testing the Flask API to ensure it’s working as
 README.md: This file, which explains the project, the folder structure, and how to use the application.
 
 How to Use
-Clone the Repository
+
+Clone the Repository :
 
 Clone the repository to your local machine using the following command: git clone <your-repository-link>
 
-Install Dependencies
+Install Dependencies :
 
 Navigate to the project folder and install the required dependencies by running: pip install -r requirements.txt
 
 This command installs all the necessary libraries, including Flask, Gradio, Scikit-learn, and others required for the project.
 
-Run the Application
+Run the Application :
 
 To start the Flask API, use the command: python api.py
 
@@ -52,13 +53,13 @@ If you prefer using the Gradio interface (for a simpler web-based UI), run: pyth
 
 This will launch the Gradio interface at http://127.0.0.1:7860. You can paste an email into the interface to classify and mask the PII.
 
-Send a Test Email
+Send a Test Email :
 
 To test the API, run the test_api.py script: python test_api.py
 
 This will send a test email to the API and print the JSON response, including the classified email and masked PII entities.
 
-Expected Output
+Expected Output :
 
 The output from the API or Gradio interface will look something like this:
 
@@ -82,12 +83,12 @@ Copy
     "category_of_the_email": "Incident"
 }
 
-Challenges Faced
+Challenges Faced :
 
-Regex for Masking PII: Ensuring accurate detection and masking of PII, especially distinguishing between similar entities like "CVV" and "expiry date".
+- Regex for Masking PII: Ensuring accurate detection and masking of PII, especially distinguishing between similar entities like "CVV" and "expiry date".
 
-Full Name Classification: Avoiding false positives where phrases like "Dear Support" or "My Aadhaar" were mistakenly identified as full names.
+- Full Name Classification: Avoiding false positives where phrases like "Dear Support" or "My Aadhaar" were mistakenly identified as full names.
 
-Model Accuracy: Achieving satisfactory classification accuracy, ensuring that the model's predictions are both relevant and meaningful to the user.
+- Model Accuracy: Achieving satisfactory classification accuracy, ensuring that the model's predictions are both relevant and meaningful to the user.
 
-Handling Large Texts: Properly handling and classifying long and complex email bodies while ensuring no data loss during the masking process.
+- Handling Large Texts: Properly handling and classifying long and complex email bodies while ensuring no data loss during the masking process.
