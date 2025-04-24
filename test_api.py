@@ -6,16 +6,16 @@ url = "http://127.0.0.1:5000/classify"  # URL of the Flask API endpoint for emai
 # Test email content to classify
 payload = {
     "email": """  # Sample email to test the classification and PII masking
-    Dear Team,
+    Hi Support,
 
-This is Sneha Reddy. You can reach me at sneha.reddy22@gmail.com or +91-9876501234.
-My birthdate is 05/09/1993. My Aadhaar number is 4567-8901-2345.
-I noticed a fraudulent charge on my credit card 1234-5678-9012-3456 (CVV: 789, Expiry: 08/2026).
+I am James Smith. You can reach me at james.smith@example.com or call me at +44-7987654321.
+My birthdate is 10/05/1990. My Aadhaar number is 4567-8901-2345.
+I just found an unusual charge on my credit card 1234-5678-9012-3456 (CVV: 456, Expiry: 07/2024).
 
-Please look into this urgently.
+Kindly take action.
 
-Regards,  
-Sneha
+Best regards,  
+James
 """
 }
 
