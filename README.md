@@ -2,6 +2,7 @@
 Email Classification and PII Masking Application using Flask, Gradio, and Machine Learning
 
 Overview
+
 This project implements an Email Classification and PII Masking system that allows users to classify support emails and mask personal identifiable information (PII) like names, email addresses, phone numbers, Aadhaar numbers, credit card details, etc. The solution uses machine learning for classification and custom regex-based masking for PII entities.
 
 The application is built using:
@@ -15,6 +16,7 @@ Scikit-learn for building the classification model.
 Regex for identifying and masking PII data.
 
 What’s Included
+
 app.py: The main entry point for the application. It sets up the Gradio interface for email classification and PII masking, enabling users to interact with the model.
 
 requirements.txt: A list of required Python libraries needed to run the application, including flask, gradio, scikit-learn, and more.
