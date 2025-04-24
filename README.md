@@ -7,61 +7,61 @@ This project implements an Email Classification and PII Masking system that allo
 
 The application is built using:
 
-Flask for API development.
+- Flask for API development.
 
-Gradio for creating the user interface.
+- Gradio for creating the user interface.
 
-Scikit-learn for building the classification model.
+- Scikit-learn for building the classification model.
 
-Regex for identifying and masking PII data.
+- Regex for identifying and masking PII data.
 
 What’s Included
 
-app.py: The main entry point for the application. It sets up the Gradio interface for email classification and PII masking, enabling users to interact with the model.
+- app.py: The main entry point for the application. It sets up the Gradio interface for email classification and PII masking, enabling users to interact with the model.
 
-requirements.txt: A list of required Python libraries needed to run the application, including flask, gradio, scikit-learn, and more.
+- requirements.txt: A list of required Python libraries needed to run the application, including flask, gradio, scikit-learn, and more.
 
-models.py: Contains the code for training the machine learning model using labeled email data and saving the model for future use.
+- models.py: Contains the code for training the machine learning model using labeled email data and saving the model for future use.
 
-utils.py: A utility script responsible for masking PII from emails using regex patterns. It includes definitions for identifying emails, credit cards, phone numbers, and more.
+- utils.py: A utility script responsible for masking PII from emails using regex patterns. It includes definitions for identifying emails, credit cards, phone numbers, and more.
 
-api.py: Contains the Flask API setup for receiving requests, processing emails, and returning classified emails with masked PII.
+- api.py: Contains the Flask API setup for receiving requests, processing emails, and returning classified emails with masked PII.
 
-test_api.py: A script used for testing the Flask API to ensure it’s working as expected. It sends test emails and checks the returned output.
+- test_api.py: A script used for testing the Flask API to ensure it’s working as expected. It sends test emails and checks the returned output.
 
-README.md: This file, which explains the project, the folder structure, and how to use the application.
+- README.md: This file, which explains the project, the folder structure, and how to use the application.
 
-How to Use
+How to Use :
 
 Clone the Repository :
 
-Clone the repository to your local machine using the following command: git clone <your-repository-link>
+- Clone the repository to your local machine using the following command: git clone <your-repository-link>
 
 Install Dependencies :
 
-Navigate to the project folder and install the required dependencies by running: pip install -r requirements.txt
+- Navigate to the project folder and install the required dependencies by running: pip install -r requirements.txt
 
-This command installs all the necessary libraries, including Flask, Gradio, Scikit-learn, and others required for the project.
+- This command installs all the necessary libraries, including Flask, Gradio, Scikit-learn, and others required for the project.
 
 Run the Application :
 
-To start the Flask API, use the command: python api.py
+- To start the Flask API, use the command: python api.py.
 
-This will start a local server accessible at http://127.0.0.1:5000. The API will be ready to receive requests.
+- This will start a local server accessible at http://127.0.0.1:5000. The API will be ready to receive requests.
 
-If you prefer using the Gradio interface (for a simpler web-based UI), run: python app.py
+- If you prefer using the Gradio interface (for a simpler web-based UI), run: python app.py.
 
-This will launch the Gradio interface at http://127.0.0.1:7860. You can paste an email into the interface to classify and mask the PII.
+- This will launch the Gradio interface at http://127.0.0.1:7860. You can paste an email into the interface to classify and mask the PII.
 
 Send a Test Email :
 
-To test the API, run the test_api.py script: python test_api.py
+- To test the API, run the test_api.py script: python test_api.py
 
-This will send a test email to the API and print the JSON response, including the classified email and masked PII entities.
+- This will send a test email to the API and print the JSON response, including the classified email and masked PII entities.
 
 Expected Output :
 
-The output from the API or Gradio interface will look something like this:
+- The output from the API or Gradio interface will look something like this:
 
 json
 Copy
